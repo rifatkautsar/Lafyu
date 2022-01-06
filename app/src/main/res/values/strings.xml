@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MegaPlex</string>
+    <string name="edittext_hint"><font size="13">Your Email</font></string>
+</resources>
