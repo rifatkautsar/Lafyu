@@ -9,33 +9,35 @@
 
     <LinearLayout
         android:id="@+id/layout1"
-            android:layout_width="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="50dp"
-            android:layout_centerHorizontal="true"
-            android:layout_height="wrap_content">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:src="@drawable/icon"
-                android:layout_gravity="center_horizontal"
-                android:layout_height="wrap_content"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon" />
 
         <TextView
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
             android:text="Welcome to Lafyuu"
-            android:layout_marginTop="10dp"
-            android:textColor="@color/Black"
-            android:layout_gravity="center_horizontal"
-            android:layout_height="wrap_content"/>
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/Black" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="Sign to continue"
-            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_height="wrap_content"/>
-        </LinearLayout>
+            android:layout_marginTop="10dp"
+            android:text="Sign to continue" />
+    </LinearLayout>
 
     <RelativeLayout
         android:id="@+id/layout2"
@@ -49,11 +51,11 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/txtinput1"
-            android:padding="10dp"
-            android:layout_width="match_parent"
-            app:startIconDrawable="@drawable/ic_email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_height="wrap_content">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:startIconDrawable="@drawable/ic_email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtemaillogin"
@@ -82,6 +84,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/layout3"
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/layout2"
@@ -91,19 +94,123 @@
             android:id="@+id/btnlogin"
             android:layout_width="350dp"
             android:layout_height="65dp"
-            android:textAllCaps="false"
-            android:text="Sign In"
             android:background="@drawable/button_rectangle"
+            android:text="Sign In"
+            android:textAllCaps="false"
             app:backgroundTint="#00BCD4" />
 
         <TextView
             android:layout_width="wrap_content"
-            android:text="OR"
-            android:textSize="20sp"
+            android:layout_height="wrap_content"
             android:layout_below="@id/btnlogin"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
-            android:layout_height="wrap_content"/>
+            android:text="OR"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:layout_below="@id/layout3"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvlogingoogle"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="360dp"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/ic_google"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Login With Google"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/cvlogingoogle"
+            android:layout_width="360dp"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_facebook" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Login With facebook"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tvpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Forgot Password?"
+            android:textColor="@color/background"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvdonthaveaccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvpassword"
+            android:text="Don't have an account?"
+            android:textColor="@color/Gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tvdonthaveaccount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/tvdonthaveaccount"
+            android:text="Register"
+            android:textColor="@color/background"
+            android:textSize="14sp" />
+
     </RelativeLayout>
 
 </RelativeLayout>
