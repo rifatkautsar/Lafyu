@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MegaPlex">
         <activity
+            android:name=".ActivityActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NotifActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FeedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="true" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="true" />
         <activity

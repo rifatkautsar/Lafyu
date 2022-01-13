@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">MegaPlex</string>
     <string name="edittext_hint"><font size="13">Your Email</font></string>
+    <string name="product">Nike Air Zoom Pegasus 36 Miami</string>
+    <string name="activity_dummy">Culpa cillum consectetur labore nulla nulla magna irure. Id veniam culpa officia aute dolor amet deserunt ex proident commodo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="detail_product">air max are always very comfortable fit, clean and just perfect in every way. just the box was too small and scrunched the sneakers up a little bit, not sure if the box was always this small but the 90s are and will always be one of my favorites.</string>
 </resources>
