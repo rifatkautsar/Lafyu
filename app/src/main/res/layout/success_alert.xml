@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgsuccess"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_success" />
+
+        <TextView
+            android:id="@+id/tvsuccess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgsuccess"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-36dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Success"
+            android:textColor="@color/Black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvthankyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvsuccess"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="thank you for shopping using lafyuu"
+            android:textColor="@color/Gray" />
+
+        <Button
+            android:layout_width="380dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/tvthankyou"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/background"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Back To Order"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

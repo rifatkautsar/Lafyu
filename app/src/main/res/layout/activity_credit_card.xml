@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditCardActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/White"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imgback"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_back"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@id/imgback"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Choose Card"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_plus"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/background"
+                app:cardCornerRadius="5dp"
+                android:layout_height="200dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_mastercard"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/tvcardnumber"
+                        android:layout_width="wrap_content"
+                        android:text="6326    9124    8124    9875"
+                        android:layout_centerInParent="true"
+                        android:textSize="27sp"
+                        android:textColor="@color/White"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_height="wrap_content"/>
+
+                    <RelativeLayout
+                        android:id="@+id/layout"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/tvcardnumber"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tvcardholder"
+                            android:layout_width="wrap_content"
+                            android:text="Card Holder"
+                            android:layout_marginStart="15dp"
+                            android:textColor="@color/Gray"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_toRightOf="@id/tvcardholder"
+                            android:layout_width="wrap_content"
+                            android:text="Card save"
+                            android:layout_marginStart="40dp"
+                            android:textColor="@color/Gray"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tvcardholders"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:text="John Reese"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="@color/White" />
+
+                        <TextView
+                            android:layout_toRightOf="@id/tvcardholders"
+                            android:layout_width="wrap_content"
+                            android:text="19/2042"
+                            android:layout_marginStart="40dp"
+                            android:textColor="@color/White"
+                            android:fontFamily="@font/poppins_bold"
+                            android:layout_height="wrap_content"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="360dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/background"
+            android:text="Pay $766.88"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_height="90dp"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
