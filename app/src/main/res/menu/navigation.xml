@@ -3,13 +3,33 @@
 
 
     <item
-        android:id="@+id/navigation_satu"
+        android:id="@+id/homemenu"
         android:icon="@android:drawable/ic_menu_call"
-        android:title="Satu" />
+        android:title="Home" />
 
     <item
-        android:id="@+id/navigation_dua"
+        android:id="@+id/exploremenu"
         android:icon="@android:drawable/ic_menu_search"
-        android:title="Dua" />
+        android:title="Explore" />
+
+    <item
+        android:id="@+id/cartmenu"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Cart" />
+
+    <item
+        android:id="@+id/offermenu"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Offer" />
+
+    <item
+        android:id="@+id/accountmenu"
+        android:icon="@android:drawable/ic_menu_call"
+        android:title="Account" />
+
+
+
+
+
 
 </menu>

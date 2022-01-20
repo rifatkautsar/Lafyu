@@ -10,37 +10,79 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MegaPlex">
         <activity
-            android:name=".CreditCardActivity"
+            android:name=".ui.main.view.DetailOrderActivity"
             android:exported="true" />
         <activity
-            android:name=".PaymentActivity"
+            android:name=".ui.main.view.OrderActivity"
             android:exported="true" />
         <activity
-            android:name=".AddressActivity"
+            android:name=".OrderDetailActivity"
             android:exported="true" />
         <activity
-            android:name=".ActivityActivity"
+            android:name=".ui.main.view.AddCardActivity"
             android:exported="true" />
         <activity
-            android:name=".NotifActivity"
+            android:name=".ui.main.view.AddressActivity"
             android:exported="true" />
         <activity
-            android:name=".FeedActivity"
+            android:name=".ui.main.view.AddAddressActivity"
             android:exported="true" />
         <activity
-            android:name=".NotificationActivity"
+            android:name=".ui.main.view.ChangePasswordActivity"
             android:exported="true" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".ui.main.view.ChangeNumberActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.main.view.ChangeMailActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".ui.main.view.ChangeBirthdayActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.main.view.ChangeGenderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.ChangeNameActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.ActivityProfile"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.CreditCardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.PaymentActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.ShipToActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.ActivityActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.NotifActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.FeedActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.NotificationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.view.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

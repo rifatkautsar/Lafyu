@@ -5,12 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".ui.main.view.RegisterActivity">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_centerInParent="true"
-        android:layout_height="wrap_content">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
 
         <LinearLayout
             android:id="@+id/layout1"
@@ -30,10 +30,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:text="Let's Get Started"
-                android:textSize="20sp"
                 android:fontFamily="@font/poppins_bold"
-                android:textColor="@color/Black" />
+                android:text="Let's Get Started"
+                android:textColor="@color/Black"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -70,56 +70,56 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_below="@+id/txtinput1"
                 android:id="@+id/txtinput2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtinput1"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
-                android:layout_width="match_parent"
-                app:startIconDrawable="@drawable/ic_email"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_height="wrap_content">
+                app:startIconDrawable="@drawable/ic_email">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtpasswordlogin"
                     android:layout_width="match_parent"
-                    android:inputType="textEmailAddress"
                     android:layout_height="wrap_content"
-                    android:hint="Your Email" />
+                    android:hint="Your Email"
+                    android:inputType="textEmailAddress" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_below="@+id/txtinput2"
                 android:id="@+id/txtinput3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtinput2"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
-                android:layout_width="match_parent"
-                app:startIconDrawable="@drawable/ic_password"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_height="wrap_content">
+                app:startIconDrawable="@drawable/ic_password">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:inputType="textPassword"
                     android:layout_height="wrap_content"
-                    android:hint="Password" />
+                    android:hint="Password"
+                    android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
-                android:layout_below="@+id/txtinput3"
                 android:id="@+id/txtinput4"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtinput3"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
-                android:layout_width="match_parent"
-                app:startIconDrawable="@drawable/ic_password"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_height="wrap_content">
+                app:startIconDrawable="@drawable/ic_password">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:inputType="textPassword"
                     android:layout_height="wrap_content"
-                    android:hint="Confirm Password" />
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword" />
             </com.google.android.material.textfield.TextInputLayout>
 
         </RelativeLayout>
@@ -127,9 +127,9 @@
         <RelativeLayout
             android:id="@+id/layout3"
             android:layout_width="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
             android:layout_below="@id/layout2"
-            android:layout_height="wrap_content">
+            android:layout_centerHorizontal="true">
 
             <Button
                 android:id="@+id/btnlogin"
@@ -142,31 +142,31 @@
 
             <LinearLayout
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/btnlogin"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
                 android:layout_centerHorizontal="true"
-                android:layout_height="wrap_content">
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="have an account?"
-                    android:textSize="14sp"
                     android:textColor="@color/Gray"
-                    android:layout_height="wrap_content"/>
+                    android:textSize="14sp" />
 
                 <TextView
+                    android:id="@+id/tvsignin"
                     android:layout_width="wrap_content"
-                    android:text="Sign in"
+                    android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
-                    android:textSize="14sp"
+                    android:text="Sign in"
                     android:textColor="@color/background"
-                    android:layout_height="wrap_content"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
         </RelativeLayout>
-
 
 
     </RelativeLayout>

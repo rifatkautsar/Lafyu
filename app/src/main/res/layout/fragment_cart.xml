@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".FragmentCart">
+    tools:context=".ui.main.view.FragmentCart">
 
 
     <RelativeLayout
@@ -30,156 +30,25 @@
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             android:layout_below="@id/toolbar"
             android:layout_marginTop="10dp">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cvcart"
-                android:layout_width="370dp"
-                android:layout_height="130dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="@color/White"
-                android:elevation="5dp"
-                app:cardCornerRadius="10dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"/>
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_centerInParent="true">
-
-                        <ImageView
-                            android:id="@+id/imgcart"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_marginStart="10dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/feed_dummy" />
-
-                        <RelativeLayout
-                            android:id="@+id/layoutcv"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_centerVertical="true"
-                            android:layout_toRightOf="@id/imgcart">
-
-                            <TextView
-                                android:layout_width="220dp"
-                                android:layout_height="wrap_content"
-                                android:layout_marginStart="5dp"
-                                android:text="Nike Air Zoom Pegasus 36 Miami"
-                                android:textSize="14sp" />
-
-                            <ImageView
-                                android:id="@+id/imgtrash"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginRight="10dp"
-                                android:src="@drawable/ic_trash" />
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginRight="10dp"
-                                android:layout_toLeftOf="@id/imgtrash"
-                                android:src="@drawable/ic_favorite" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/layoutcv"
-                            android:layout_centerHorizontal="true"
-                            android:layout_marginTop="2dp"
-                            android:layout_toRightOf="@id/imgcart">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins_bold"
-                                android:text="$100.00"
-
-                                android:textColor="@color/background" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:layout_marginRight="10dp"
-                                android:orientation="horizontal">
-
-                                <androidx.cardview.widget.CardView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:backgroundTint="@color/White">
-
-                                    <RelativeLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_centerInParent="true"
-                                            android:text="-" />
-                                    </RelativeLayout>
-                                </androidx.cardview.widget.CardView>
-
-                                <androidx.cardview.widget.CardView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:backgroundTint="#EBF0FF">
-
-                                    <RelativeLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_centerInParent="true"
-                                            android:text="1" />
-                                    </RelativeLayout>
-
-                                </androidx.cardview.widget.CardView>
-
-                                <androidx.cardview.widget.CardView
-                                    android:layout_width="30dp"
-                                    android:layout_height="30dp"
-                                    android:backgroundTint="@color/White">
-
-                                    <RelativeLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:layout_centerInParent="true"
-                                            android:text="+" />
-                                    </RelativeLayout>
-
-                                </androidx.cardview.widget.CardView>
-                            </LinearLayout>
-                        </RelativeLayout>
-                    </RelativeLayout>
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
 
             <RelativeLayout
                 android:id="@+id/layout2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/cvcart"
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal">
 
@@ -207,126 +76,118 @@
                     android:textAllCaps="false" />
             </RelativeLayout>
 
-            <RelativeLayout
+            <LinearLayout
                 android:id="@+id/layouttotal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/layout2"
+                android:orientation="vertical"
                 android:layout_marginTop="15dp"
                 android:padding="8dp">
 
-                <androidx.cardview.widget.CardView
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="170dp"
-                    android:elevation="10dp"
-                    app:cardCornerRadius="7dp">
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutcartitem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Items (3)"
+                            android:textColor="@color/Gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="$598.00" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutcartshipping"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layoutcartitem"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Shipping"
+                            android:textColor="@color/Gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="$40.00" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layoutcartimport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layoutcartshipping"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="Import charges"
+                            android:textColor="@color/Gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="$128.00" />
+                    </RelativeLayout>
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="10dp">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
 
-                        <RelativeLayout
-                            android:id="@+id/layoutcartitem"
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp">
+                            android:layout_alignParentLeft="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Total Price"
+                            android:textColor="@color/Black" />
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:text="Items (3)"
-                                android:textColor="@color/Gray" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:text="$598.00" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:id="@+id/layoutcartshipping"
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/layoutcartitem"
-                            android:layout_marginTop="10dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:text="Shipping"
-                                android:textColor="@color/Gray" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:text="$40.00" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:id="@+id/layoutcartimport"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/layoutcartshipping"
-                            android:layout_marginTop="10dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:text="Import charges"
-                                android:textColor="@color/Gray" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:text="$128.00" />
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentBottom="true"
-                            android:layout_marginTop="10dp">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentLeft="true"
-                                android:fontFamily="@font/poppins_bold"
-                                android:text="Total Price"
-                                android:textColor="@color/Black" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
-                                android:fontFamily="@font/poppins_bold"
-                                android:text="$766.89"
-                                android:textColor="@color/background" />
-                        </RelativeLayout>
-
-
+                            android:layout_alignParentRight="true"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="$766.89"
+                            android:textColor="@color/background" />
                     </RelativeLayout>
-                </androidx.cardview.widget.CardView>
-            </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
 
             <Button
                 android:layout_width="380dp"
                 android:text="Check Out"
                 android:textAllCaps="false"
                 android:layout_marginTop="15dp"
-                android:layout_below="@id/layouttotal"
+                android:layout_gravity="center_horizontal"
                 android:fontFamily="@font/poppins_bold"
-                android:layout_centerHorizontal="true"
                 android:backgroundTint="@color/background"
                 android:layout_height="68dp"/>
-        </RelativeLayout>
+        </LinearLayout>
 
     </RelativeLayout>
 </FrameLayout>

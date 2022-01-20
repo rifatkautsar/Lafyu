@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreditCardActivity">
+    tools:context=".ui.main.view.CreditCardActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -133,13 +133,13 @@
 
         <Button
             android:layout_width="360dp"
+            android:layout_height="90dp"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="15dp"
             android:backgroundTint="@color/background"
-            android:text="Pay $766.88"
             android:fontFamily="@font/poppins_bold"
-            android:layout_height="90dp"/>
+            android:text="Pay $766.88" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

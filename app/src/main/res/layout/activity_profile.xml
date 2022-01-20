@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.view.ActivityProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/White">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Profile"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="15dp"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgprofile"
+                android:layout_width="wrap_content"
+                android:src="@drawable/profile_picture"
+                android:scaleType="centerCrop"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/imgprofile"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="John Reese"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="johnreese@example.com"
+                    android:textSize="10sp"
+                    android:textColor="@color/Gray"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/layout"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imggender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_gender" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Gender"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@id/imggender"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/genderdetail"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Male"
+                        android:textColor="@color/Gray"
+                        android:layout_toLeftOf="@id/genderdetail"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/imgbirthday"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_calender" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Birthday"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@id/imgbirthday"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/birthdetail"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="12-12-2000"
+                        android:textColor="@color/Gray"
+                        android:layout_toLeftOf="@id/birthdetail"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_email_blue" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Email"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@id/imgemail"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_height="wrap_content"/>
+
+                    <ImageView
+                        android:id="@+id/emaildetail"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/emaildetail"
+                        android:text="johnreese@mail.com"
+                        android:textColor="@color/Gray" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgphonenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@id/imgphonenumber"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Phone Number" />
+
+                    <ImageView
+                        android:id="@+id/phonedetail"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/phonedetail"
+                        android:text="(+62) 12345678"
+                        android:textColor="@color/Gray" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:padding="15dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgpassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_password_blue" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@id/imgpassword"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Password" />
+
+                    <ImageView
+                        android:id="@+id/passworddetail"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_right"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_toLeftOf="@id/passworddetail"
+                        android:text="**************"
+                        android:textColor="@color/Gray" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

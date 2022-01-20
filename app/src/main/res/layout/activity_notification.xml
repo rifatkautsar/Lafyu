@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NotificationActivity">
+    tools:context=".ui.main.view.NotificationActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,25 +14,27 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:background="@color/White"
-            android:layout_height="70dp">
+            android:layout_height="70dp"
+            android:background="@color/White">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="horizontal"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
                 <ImageView
                     android:layout_width="wrap_content"
-                    android:src="@drawable/ic_back"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:layout_height="wrap_content"/>
+                    android:src="@drawable/ic_back" />
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:text="Notification"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
-                    android:textSize="18sp"
                     android:fontFamily="@font/poppins_bold"
-                    android:layout_height="wrap_content"/>
+                    android:text="Notification"
+                    android:textSize="18sp" />
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
 

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.view.AddressActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:backgroundTint="@color/White"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imgback"
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/ic_back"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_toRightOf="@id/imgback"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Address"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:padding="15dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="18dp">
+
+                    <TextView
+                        android:id="@+id/tvnameaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="John Reese"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvaddress"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvnameaddress"
+                        android:layout_marginTop="10dp"
+                        android:text="3711 Spring Hill Rd undefined Tallahassee, Nevada 52874 United States"
+                        android:textColor="@color/Gray"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tvphonenumberaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvaddress"
+                        android:layout_marginTop="15dp"
+                        android:text="+99 1234567890"
+                        android:textColor="@color/Gray"
+                        android:textSize="11sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvphonenumberaddress">
+
+                        <Button
+                            android:id="@+id/btneditaddress"
+                            android:layout_width="70dp"
+                            android:layout_height="90dp"
+                            android:backgroundTint="@color/background"
+                            android:text="Edit"
+                            android:textAllCaps="false" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_toRightOf="@id/btneditaddress"
+                            android:src="@drawable/ic_trash" />
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddressActivity">
+    tools:context=".ui.main.view.ShipToActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -49,76 +49,77 @@
             </androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.AppBarLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_below="@id/toolbar"
-        android:padding="15dp"
-        android:layout_height="match_parent">
-
-        <androidx.cardview.widget.CardView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginTop="15dp">
-            <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:padding="15dp">
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:padding="18dp"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/tvnameaddress"
-                    android:layout_width="wrap_content"
-                    android:text="John Reese"
-                    android:textSize="18sp"
-                    android:fontFamily="@font/poppins_bold"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:id="@+id/tvaddress"
-                    android:layout_marginTop="10dp"
-                    android:layout_width="290dp"
-                    android:layout_below="@id/tvnameaddress"
-                    android:textSize="11sp"
-                    android:textColor="@color/Gray"
-                    android:text="3711 Spring Hill Rd undefined Tallahassee, Nevada 52874 United States"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:id="@+id/tvphonenumberaddress"
-                    android:layout_width="wrap_content"
-                    android:text="+99 1234567890"
-                    android:layout_below="@id/tvaddress"
-                    android:layout_marginTop="15dp"
-                    android:textSize="11sp"
-                    android:textColor="@color/Gray"
-                    android:layout_height="wrap_content"/>
+                android:layout_height="210dp"
+                android:layout_marginTop="15dp">
 
                 <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_below="@id/tvphonenumberaddress"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="18dp">
 
-                    <Button
-                        android:layout_width="70dp"
-                        android:text="Edit"
-                        android:textAllCaps="false"
-                        android:id="@+id/btneditaddress"
-                        android:backgroundTint="@color/background"
-                        android:layout_height="80dp"/>
-
-                    <ImageView
+                    <TextView
+                        android:id="@+id/tvnameaddress"
                         android:layout_width="wrap_content"
-                        android:layout_toRightOf="@id/btneditaddress"
-                        android:layout_centerVertical="true"
-                        android:src="@drawable/ic_trash"
-                        android:layout_marginStart="10dp"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="John Reese"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/tvaddress"
+                        android:layout_width="290dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvnameaddress"
+                        android:layout_marginTop="10dp"
+                        android:text="3711 Spring Hill Rd undefined Tallahassee, Nevada 52874 United States"
+                        android:textColor="@color/Gray"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tvphonenumberaddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvaddress"
+                        android:layout_marginTop="15dp"
+                        android:text="+99 1234567890"
+                        android:textColor="@color/Gray"
+                        android:textSize="11sp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvphonenumberaddress">
+
+                        <Button
+                            android:id="@+id/btneditaddress"
+                            android:layout_width="70dp"
+                            android:layout_height="90dp"
+                            android:backgroundTint="@color/background"
+                            android:text="Edit"
+                            android:textAllCaps="false" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_toRightOf="@id/btneditaddress"
+                            android:src="@drawable/ic_trash" />
+                    </RelativeLayout>
+
                 </RelativeLayout>
 
-            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
 
-        </androidx.cardview.widget.CardView>
-
-    </RelativeLayout>
+        </RelativeLayout>
 
     </RelativeLayout>
 
