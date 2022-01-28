@@ -9,22 +9,22 @@
 
     <item
         android:id="@+id/exploremenu"
-        android:icon="@android:drawable/ic_menu_search"
+        android:icon="@drawable/ic_search"
         android:title="Explore" />
 
     <item
         android:id="@+id/cartmenu"
-        android:icon="@android:drawable/ic_menu_call"
+        android:icon="@drawable/ic_cart"
         android:title="Cart" />
 
     <item
         android:id="@+id/offermenu"
-        android:icon="@android:drawable/ic_menu_call"
+        android:icon="@drawable/ic_offer"
         android:title="Offer" />
 
     <item
         android:id="@+id/accountmenu"
-        android:icon="@android:drawable/ic_menu_call"
+        android:icon="@drawable/ic_person"
         android:title="Account" />
 
 

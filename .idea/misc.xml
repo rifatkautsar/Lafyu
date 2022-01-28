@@ -7,14 +7,18 @@
         <entry key="app/src/main/res/drawable/button_rectangle.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/circle.xml" value="0.1299342105263158" />
         <entry key="app/src/main/res/drawable/circle_grey.xml" value="0.1299342105263158" />
+        <entry key="app/src/main/res/drawable/edit_text_border.xml" value="0.1299342105263158" />
         <entry key="app/src/main/res/drawable/floating_border.xml" value="0.1299342105263158" />
         <entry key="app/src/main/res/drawable/ic_email.xml" value="0.13223684210526315" />
         <entry key="app/src/main/res/drawable/image_shape.xml" value="0.12236842105263158" />
+        <entry key="app/src/main/res/drawable/indicator_default.xml" value="0.13843648208469056" />
+        <entry key="app/src/main/res/drawable/indicator_selected.xml" value="0.13843648208469056" />
+        <entry key="app/src/main/res/drawable/indicator_selector.xml" value="0.13843648208469056" />
         <entry key="app/src/main/res/drawable/spinner_background.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_activity.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_add_address.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/activity_add_address.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_add_card.xml" value="0.14" />
-        <entry key="app/src/main/res/layout/activity_address.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_address.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_address2.xml" value="0.11217105263157895" />
         <entry key="app/src/main/res/layout/activity_change_birthday.xml" value="0.14" />
         <entry key="app/src/main/res/layout/activity_change_gender.xml" value="0.2" />
@@ -23,10 +27,10 @@
         <entry key="app/src/main/res/layout/activity_change_number.xml" value="0.18" />
         <entry key="app/src/main/res/layout/activity_change_password.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_credit_card.xml" value="0.15" />
-        <entry key="app/src/main/res/layout/activity_detail_order.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_detail_order.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_feed.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.18" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.13" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/layout/activity_notif.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_notification.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_order.xml" value="0.19" />

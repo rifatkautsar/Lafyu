@@ -37,6 +37,7 @@
                 android:layout_toRightOf="@id/imgcart">
 
                 <TextView
+                    android:id="@+id/tvproductnamecart"
                     android:layout_width="220dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
@@ -68,6 +69,7 @@
                 android:layout_toRightOf="@id/imgcart">
 
                 <TextView
+                    android:id="@+id/tvpricecart"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_bold"

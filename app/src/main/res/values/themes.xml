@@ -7,6 +7,8 @@
         <item name="android:textViewStyle">@font/poppins_regular</item>
         <item name="android:buttonStyle">@font/poppins_regular</item>
         <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
     </style>
 
 </resources>
